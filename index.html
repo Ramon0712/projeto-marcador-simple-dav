@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/img/favicon-32x32.png"
+    />
+    <title>Projeto de Marcador Simple</title>
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/variaveis.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        
+          <figure class="nav__figure">
+            
+            <img src="./src/img/logo.png" width="40px" alt=""/>
+            <div>MARCADOR</div>
+          
+          </figure>
+        
+        <div class="nav__hamburguer">
+          <img src="./src/img/icon-hamburger.svg" class="navegador__button" />
+        </div>
+
+        <div class="navegador__container">
+          <ul class="nav__list container">
+            <li class="nav__element">
+              <a href="#Caracteristica" class="nav__link">Característica</a>
+            </li>
+
+            <li class="nav__element">
+              <a href="#precios" class="nav__link">F. de precios</a>
+            </li>
+
+            <li class="nav__element">
+              <a href="#" class="nav__link">Contacto</a>
+            </li>
+
+            <li class="nav__element">
+              <a href="#log" class="nav__link nav__link--last">Acceso</a>
+            </li>
+          </ul>
+
+          <div class="nav__social">
+            <a href="#" class="nav__media">
+              <img src="./src/img/icon-facebook.svg" class="nav__socialme" />
+            </a>
+
+            <a href="#" class="nav__media">
+              <img src="./src/img/icon-twitter.svg" class="nav__socialme" />
+            </a>
+
+            <a href="#" class="nav__media">
+              <img src="./src/img/icon-youtube.svg" class="nav__socialme" />
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero__main container">
+        <figure class="hero__figure">
+          <img src="./src/img/illustration-hero.svg" class="hero__img" />
+        </figure>
+
+        <article class="hero__texts">
+          <h1 class="hero__title">
+            Un Administrador de <br />
+            Marcador Simple
+          </h1>
+          <p class="hero__paragraph">
+            Una interface limpia y sencilla par organizar tus sitios web
+            favoritos. Abra una nueva pestaña del navegador y vea cómo sus
+            sitios se cargan al instante. Pruébalo gratis.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="https://chrome.com/" target="_blank"      class="hero__button">Conseguir con Chrome</a>
+
+            <a href="https://firefox.com/" target="_blank"   class="hero__button hero__button--white"
+              >Conseguir con Firefox</a
+            >
+          </div>
+        </article>
+      </section>
+    </header>
+
+    <main class="main">
+      <section class="features container">
+        <div class="features__content">
+          <h2 class="features__title" id="Caracteristica">Característica</h2>
+          <p class="features__paragraph">
+            Nuestro objetivo es hacer que sea rápido y fácil para usted acceder
+            a sus sitos web favoritos. Sus marcadores se sincronizan entre
+            dispositivos para que pueda acceder a ellos mientras viaja.
+          </p>
+
+          <ul class="features__list">
+            <li class="features__element">
+              <a
+                href="#"
+                class="features__tab features__tab--active"
+                data-article="1"
+                >Marcadores simples</a
+              >
+            </li>
+
+            <li class="features__element">
+              <a href="#" class="features__tab" data-article="2"
+                >Búsqueda rápida
+              </a>
+            </li>
+
+            <li class="features__element">
+              <a href="#" class="features__tab" data-article="3">
+                Fácil de compartir
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="features__container">
+          <article class="features__article features__article--active">
+            <figure class="features__figure">
+              <img
+                src="./src/img/illustration-features-tab-1.svg"
+                class="features__img"
+              />
+            </figure>
+
+            <div class="features__texts">
+              <h3 class="features__subtitle">Marcador de un clic</h3>
+              <p class="features__copy">
+                Organiza tus marcadores como quieras. Nuestra sencilla interfaz
+                de arrastrar y soltar le da control total sobre cómo administra
+                sus sitios favoritos.
+              </p>
+              <a href="#" class="features__cta">más información</a>
+            </div>
+          </article>
+
+          <article class="features__article">
+            <figure class="features__figure">
+              <img
+                src="./src/img/illustration-features-tab-2.svg"
+                class="features__img"
+              />
+            </figure>
+
+            <div class="features__texts">
+              <h3 class="features__subtitle">Búsqueda inteligente</h3>
+              <p class="features__copy">
+                Nuestra poderosa función de búsqueda lo ayudará a encontrar
+                sitios guardados en muy poco tiempo. No es necesario rastrear
+                todos sus marcadores
+              </p>
+              <a href="#" class="features__cta">más información</a>
+            </div>
+          </article>
+
+          <article class="features__article">
+            <figure class="features__figure">
+              <img
+                src="./src/img/illustration-features-tab-3.svg"
+                class="features__img"
+              />
+            </figure>
+
+            <div class="features__texts">
+              <h3 class="features__subtitle">Comparte tus marcadores</h3>
+              <p class="features__copy">
+                Comparta fácilmente sus marcadores y colecciones con otros.
+                Crear un compartible enlace que puedes enviar con solo hacer
+                clic en un botón
+              </p>
+              <a href="#" class="features__cta">más información</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="download container">
+        <h2 class="download__title">Descarga la extension</h2>
+        <p class="download__paragraph">
+          Tenemos más navegadores en preparación. Háganos saber si tiene un
+          favorito que deseas que prioricemos.
+        </p>
+
+        <div class="download__container">
+          <article class="download__item">
+            <figure class="download__figure">
+              <img src="./src/img/logo-chrome.svg" class="download__img" />
+            </figure>
+
+            <h3 class="download__browser">Añadir a Chrome</h3>
+            <p class="download__version">Versíon mínima 62</p>
+            <a href="#" class="download__extension"
+              >Agregar e instalar extensión</a
+            >
+          </article>
+
+          <article class="download__item">
+            <figure class="download__figure">
+              <img src="./src/img/logo-firefox.svg" class="download__img" />
+            </figure>
+
+            <h3 class="download__browser">Añadir a Firefox</h3>
+            <p class="download__version">Versíon mínima 55</p>
+            <a href="#" class="download__extension"
+              >Agregar e instalar extensión</a
+            >
+          </article>
+
+          <article class="download__item">
+            <figure class="download__figure">
+              <img src="./src/img/logo-opera.svg" class="download__img" />
+            </figure>
+
+            <h3 class="download__browser">Añadir a Opera</h3>
+            <p class="download__version">Versíon mínima 46</p>
+            <a href="#" class="download__extension"
+              >Agregar e instalar extensión</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="article container">
+        <h2 class="article__title">Preguntas frecuentes</h2>
+        <p class="article__paragraph">
+          Estas son algunas de nuestras preguntas frecuentes. Si tienes alguna
+          otra pregunta que desee ser respondida por favor siéntase libre de
+          enviarnos un correo electrónico.
+        </p>
+
+        <div class="article__container">
+          <h3 class="articulos__questiones">
+            ¿Qué es Marcador?
+            <img src="./src/img/icon-arrow.svg" class="article__arrow" />
+          </h3>
+
+          <article class="article__content">
+            <div class="article__show">
+              <p class="article__anwser">
+                Un marcador es una característica del navegador web que se
+                utiliza para guardar la dirección URL de un sitio web para
+                referencia futura . Los marcadores ahorran tiempo al usuario y
+                al navegador, lo que es especialmente útil para páginas web con
+                direcciones URL largas o para acceder a una parte específica del
+                sitio que podría no ser la página de inicio del sitio.
+              </p>
+            </div>
+          </article>
+
+          <h3 class="articulos__questiones">
+            ¿Cómo puedo solicitar un nuevo navegador?
+            <img src="./src/img/icon-arrow.svg" class="article__arrow" />
+          </h3>
+
+          <article class="article__content">
+            <div class="article__show">
+              <p class="article__anwser">
+                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+                aliquet convallis ultricies. Mauris augue massa, ultricies non
+                ligula. Suspendisse imperdiet.
+              </p>
+            </div>
+          </article>
+
+          <h3 class="articulos__questiones">
+            ¿Hay una aplicación móvil?
+            <img src="./src/img/icon-arrow.svg" class="article__arrow" />
+          </h3>
+
+          <article class="article__content">
+            <div class="article__show">
+              <p class="article__anwser">
+                Sed consectetur quam id neque fermentum accumsan. Praesent
+                luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                Cras in ligula quis est pharetra mattis sit amet pharetra purus.
+                Sed sollicitudin ex et ultricies bibendum.
+              </p>
+            </div>
+          </article>
+
+          <h3 class="articulos__questiones">
+            ¿Qué pasa con otros navegadores Chromium?
+            <img src="./src/img/icon-arrow.svg" class="article__arrow" />
+          </h3>
+
+          <article class="article__content">
+            <div class="article__show">
+              <p class="article__anwser">
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                gravida pellentesque non ut velit.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <a href="#" class="article__cta">Más información</a>
+      </section>
+
+      <section class="joined">
+        <div class="joined__container container">
+          <p class="joined__paragraph">35,000+ ya se unieron</p>
+          <h2 class="joined__title">
+            Manténgase al día con lo que estamos haciendo
+          </h2>
+
+          <form class="joined__form">
+            <input
+              type="email"
+              placeholder="Ingrese su  correo electrónico"
+              class="joined__input"
+            />
+
+            <input type="submit" value="Contactanos" class="joined__submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <figure class="footer__figure">
+          <img width="40px" src="./src/img/logo.png" class="footer__logo" />
+          Marcador
+        </figure>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#fea" class="footer__link">Característica </a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link" id="precios">Precios</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link"> Contacto</a>
+          </li>
+        </ul>
+
+        <div class="footer__media">
+          <a href="#" class="footer__social">
+            <img src="./src/img/icon-facebook.svg" class="footer__icon" id="log" />
+          </a>
+          <a href="#" class="footer__social">
+            <img src="./src/img/icon-twitter.svg" class="footer__icon" />
+          </a>
+          <a href="#" class="footer__social">
+            <img src="./src/img/icon-youtube.svg" class="footer__icon" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
